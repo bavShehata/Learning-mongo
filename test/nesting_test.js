@@ -35,7 +35,6 @@ describe("Nesting records", () => {
         //add a book
         res.books.push({ title: "Wise Man's Fear", pages: 500 });
         res.save((err, res) => {
-          console.log("Found the book: ", res);
           assert(res.books.length === 2);
           done();
         });

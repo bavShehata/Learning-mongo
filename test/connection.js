@@ -1,6 +1,6 @@
+require("dotenv/config");
 const mongoose = require("mongoose");
-const dbURI =
-  "mongodb+srv://mongolearn:mongo1234@node.gntli.mongodb.net/testaroo?retryWrites=true&w=majority";
+const dbURI = process.env.dbURI;
 
 //Connecting to database be4 test runs
 before((done) => {
